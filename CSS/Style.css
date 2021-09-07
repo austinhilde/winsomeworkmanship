@@ -1,47 +1,45 @@
 @font-face {
   font-family: "neueworld-ExtendedThin";
-  src: url("../../CSS/fonts/neue-world/NeueWorld-ExtendedThin.woff")
-    format("woff");
+  src: url("../CSS/fonts/neue-world/NeueWorld-ExtendedThin.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "neueworld-SemiCondensedUltrabold";
-  src: url("../../CSS/fonts/neue-world/NeueWorld-SemiCondensedUltrabold.woff")
+  src: url("../CSS/fonts/neue-world/NeueWorld-SemiCondensedUltrabold.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "neueworld-Ultrabold";
-  src: url("../../CSS/fonts/neue-world/NeueWorld-Ultrabold.woff") format("woff");
+  src: url("../CSS/fonts/neue-world/NeueWorld-Ultrabold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "NeueWorld-SuperCondensedLight";
-  src: url("../../CSS/fonts/neue-world/NeueWorld-SuperCondensedLight.woff")
+  src: url("../CSS/fonts/neue-world/NeueWorld-SuperCondensedLight.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "NeueWorld-CondensedRegular";
-  src: url("../../CSS/fonts/neue-world/NeueWorld-CondensedRegular.woff")
+  src: url("../CSS/fonts/neue-world/NeueWorld-CondensedRegular.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MonumentExtended-light";
-  src: url("../../CSS/fonts/Monument/MonumentExtended-light.woff")
-    format("woff");
+  src: url("../CSS/fonts/Monument/MonumentExtended-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MonumentExtended-bold";
-  src: url("../../CSS/fonts/Monument/MonumentExtended-bold.woff") format("woff");
+  src: url("../CSS/fonts/Monument/MonumentExtended-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
