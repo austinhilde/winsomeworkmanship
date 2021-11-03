@@ -1,3 +1,7 @@
+/* ================================================================================ */
+/* ===================================== FONT FACES =============================== */
+/* ================================================================================ */
+
 @font-face {
   font-family: "neueworld-ExtendedThin";
   src: url("../CSS/fonts/neue-world/NeueWorld-ExtendedThin.woff") format("woff");
@@ -43,279 +47,757 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "MonumentExtended-regular";
+  src: url("../CSS/fonts/Monument/MonumentExtended-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
+
+  /* ================================================================================ */
+  /* ================================= MOBILE WEBSITE =============================== */
+  /* ================================================================================ */
+
+  body {
+    background-color: #fcf8f5;
+  }
+
+  /* PAGE 1 ================================ MOBILE - INDEX PAGE =============================== */
 }
 #indexbackground {
   background: url("../images/indeximage.jpg");
-  background-size: cover;
+  background-size: 300vw;
+  background-position: -53vw -16vw;
+  position: absolute;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
 }
+#foxnav {
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#foxlogo {
+  width: 20vw;
+  height: 20vw;
+  margin-top: 0.6vw;
+  background: url("../images/whitefox-01.svg") no-repeat;
+  display: inline-block;
+}
+#maincontent {
+  width: 100vw;
+  height: 155vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 45vw;
+}
+#headline {
+  text-align: center;
+}
+
+header {
+}
+
+/* PAGE 2 ================================ MOBILE - FOX PAGE =============================== */
+
 #foxbackground {
   background: url("../images/brownfox.jpg");
-  background-size: 100vw;
+  background-size: 340vw;
+  background-position: -120vw -18vw;
+  position: absolute;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
 }
+#foxcontent {
+  width: 100vw;
+  height: 175vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 45vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+#quote {
+  font-family: "NeueWorld-CondensedRegular";
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.05vw;
+  font-size: 10vw;
+  color: #fcf8f5;
+  margin: 0;
+}
+/* PAGE 3 ================================ MOBILE - ABOUT PAGE =============================== */
+
 #aboutbackground {
   background-color: #fcf8f5;
-  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
 }
+#abouttext {
+  background-color: #fcf8f5;
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-bottom: 20vw;
+}
+#foxnavbrown {
+  background-color: #fcf8f5;
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#foxlogobrown {
+  width: 20vw;
+  height: 20vw;
+  background: url("../images/fox.svg") no-repeat;
+  display: inline-block;
+  margin-top: 0.6vw;
+}
+#foxcolor {
+  filter: aqua;
+}
+.twoup {
+  background-color: #fcf8f5;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -2;
+  top: 140vw;
+  left: 0px;
+}
+#jeremy {
+  background: url("../images/jeremy.jpg");
+  background-size: 110vw;
+  background-position: 0vw -6vw;
+  width: 96vw;
+  height: 158vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  align-content: center;
+  padding-left: 15vw;
+  padding-right: 22vw;
+  padding-top: 15vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+#austin {
+  background: url("../images/austin.jpg");
+  background-size: 109.5vw;
+  background-position: -5vw -5.5vw;
+  width: 96vw;
+  height: 158vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  align-content: center;
+  padding-left: 15vw;
+  padding-right: 30vw;
+  padding-top: 15vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+
+.partner {
+  margin-top: 78vw;
+  margin-bottom: 1vw;
+}
+#contact {
+  font-family: "MonumentExtended-regular";
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  font-size: 3.4vw;
+  color: #fcf8f5;
+  margin-left: 7vw;
+}
+.contact {
+  background-color: black;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 2vw;
+}
+.contact:hover {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 2vw;
+}
+.contact:active {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 2vw;
+}
+.contactarrow {
+  display: inline-block;
+  width: 10vw;
+  margin-right: 6vw;
+}
+
+/* PAGE 4 ================================ MOBILE - PROJECT PAGE =============================== */
+
 #projectsbackground {
   background-color: #fcf8f5;
+  position: absolute;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
+}
+#foxrunresidence {
+  background: url("../images/m-foxrun-06.jpg");
   background-size: cover;
+  width: 96vw;
+  height: 165vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  align-content: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 12vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+.oneup {
+  background-color: #fcf8f5;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -2;
+  top: 40vw;
+  left: 0px;
+}
+#aperture {
+  font-family: "MonumentExtended-regular";
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  font-size: 3.4vw;
+  color: #fcf8f5;
+  margin-left: 7vw;
+}
+.aperture {
+  background-color: black;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  text-align: left;
+  margin: 0vw;
+  margin-top: 82vw;
+}
+.aperture:hover {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 82vw;
+}
+.aperture:active {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 82vw;
+}
+
+#residence {
+  color: black;
+  margin-bottom: 2vw;
+}
+#coming {
+  margin-top: 4vw;
+}
+
+/* ================================================================================ */
+/* ================================ MOBILE - ACTIVE NAV =============================== */
+
+#logounderline {
+  display: none;
+}
+.navbutton {
+  display: none;
+}
+nav {
+  display: none;
 }
 a:link {
-  color: #aa733f;
+  color: #b77030;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #aa733f;
+  color: #b77030;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ce9463;
+  color: #b77030;
   background-color: transparent;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:active {
-  color: #aa733f;
+  color: #b77030;
   background-color: transparent;
   text-decoration: none;
 }
 
-body {
-  background-color: black;
+#mobilenav {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  background-color: #b77030;
+  display: block;
 }
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.logo {
-  font-family: "MonumentExtended-bold";
-  letter-spacing: 0.04vw;
-  font-size: 1.1vw;
-  color: #aa733f;
-  width: 45vw;
-  height: 7vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 3.5vw;
-  align-items: center;
-  align-content: center;
-}
-.foxbox {
-  width: 10vw;
-  height: 7vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.fox {
-  width: 8vw;
-  height: 8vw;
-  background: url("../images/fox.svg") no-repeat;
-  display: inline-block;
-}
-.fox:hover {
-  width: 8vw;
-  height: 8vw;
-  background: url("../images/foxhover.svg") no-repeat;
-  display: inline-block;
-}
-.navbuttons {
-  width: 45vw;
-  height: 7vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 0.8vw;
-}
-.navbutton {
-  font-family: "neueworld-Ultrabold";
-  letter-spacing: 0.05vw;
-  font-size: 1.2vw;
-  color: #aa733f;
-  margin-right: 2.7vw;
-}
-
-#maincontent {
-  width: 100vw;
-  height: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-bottom: 6vw;
-}
-#foxcontent {
-  width: 100vw;
-  height: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-bottom: 12vw;
-}
-#abouttext {
-  width: 100vw;
-  height: 44vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-left: 6.5vw;
-  padding-right: 21.7vw;
-  padding-bottom: 6vw;
-}
-.twoup {
-  background-color: #fcf8f5;
-  width: 100vw;
-  height: 75.4vw;
-  display: flex;
-  flex-direction: row;
-}
-#jeremy {
-  background: url("../images/jeremy.jpg");
-  background-size: cover;
-  width: 50vw;
-  height: 75vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: top;
-  align-content: center;
-  padding-left: 6.1vw;
-  padding-right: 18vw;
-  padding-top: 6.1vw;
-  margin-left: 0.4vw;
-  margin-right: 0.4vw;
-  margin-bottom: 0.4vw;
-}
-#austin {
-  background: url("../images/austin.jpg");
-  background-size: cover;
-  width: 50vw;
-  height: 75vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: top;
-  align-content: center;
-  padding-left: 6.1vw;
-  padding-right: 19vw;
-  padding-top: 6.1vw;
-  margin-right: 0.4vw;
-  margin-bottom: 0.4vw;
-}
-.spacer {
-  height: 20vw;
-}
-.contact {
-  width: 10vw;
-  height: 2vw;
-  background: url("../images/contact.svg") no-repeat;
-  display: inline-block;
-}
-.contact:hover {
-  width: 10vw;
-  height: 2vw;
-  background: url("../images/contacthover.svg") no-repeat;
-  display: inline-block;
-}
-#foxrunresidence {
-  background: url("../images/foxrunthumbnail.jpg");
-  background-size: cover;
-  width: 100vw;
-  height: 60vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: top;
-  align-content: center;
-  padding-left: 6.1vw;
-  padding-right: 18vw;
-  padding-top: 6.1vw;
-  margin-left: 0.4vw;
-  margin-right: 0.4vw;
-  margin-bottom: 0.4vw;
-}
-.oneup {
-  background-color: #fcf8f5;
-  width: 100vw;
-  height: 60.4vw;
-  display: flex;
-  flex-direction: row;
-}
-.spacersmall {
-  height: 0.8vw;
-}
-footer {
-  background-color: black;
-  width: 100vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#haydencolorado {
+#mobilelogo {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 20vw;
+  background-color: #b77030;
   font-family: "MonumentExtended-bold";
   font-weight: normal;
-  letter-spacing: 0.1vw;
-  font-size: 0.9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 20vw;
+  width: 80vw;
+  letter-spacing: 0.2vw;
+  font-size: 3.4vw;
   color: #fcf8f5;
-  margin: 0;
+  margin-left: 0vw;
+  padding-right: 4.5vw;
+  cursor: pointer;
 }
+.hamburger {
+  background-color: #b77030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 20vw;
+  width: 20vw;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #b77030;
+  width: 100vw;
+  max-height: 0vw;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  align-content: center;
+}
+.toggle:checked + .hamburger + .menu {
+  max-height: 155vw;
+}
+input[type="checkbox"] {
+  display: none;
+}
+#mobilefox {
+  background: url("../images/whitefox-01.svg") no-repeat;
+  width: 20vw;
+  height: 20vw;
+  display: inline-block;
+}
+.navarrow {
+  width: 16vw;
+  padding-right: 5vw;
+}
+#mobileabout {
+  font-family: "neueworld-Ultrabold";
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  color: #fcf8f5;
+  margin-top: 8vw;
+  border-color: #fcf8f5;
+  border-style: solid;
+  border-width: 0.4vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-bottom: 0vw;
+  width: 65vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#mobileprojects {
+  font-family: "neueworld-Ultrabold";
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  color: #fcf8f5;
+  border-color: #fcf8f5;
+  border-style: solid;
+  border-width: 0.4vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-bottom: 0vw;
+  width: 65vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#mobilegram {
+  font-family: "neueworld-Ultrabold";
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  color: #fcf8f5;
+  border-color: #fcf8f5;
+  border-style: solid;
+  border-width: 0.4vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  width: 65vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#menupaddingbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 65vw;
+  height: 72vw;
+}
+
+/* ================================================================================ */
+/* ================================ MOBILE - FOOTER =============================== */
+
+#footer1 {
+  position: absolute;
+  z-index: -2;
+  top: 175vw;
+  left: 0px;
+  background-color: black;
+  width: 100vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#footer2 {
+  position: absolute;
+  z-index: -2;
+  top: 460vw;
+  left: 0px;
+  background-color: black;
+  width: 100vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#footer3 {
+  position: absolute;
+  z-index: -2;
+  top: 207vw;
+  left: 0px;
+  background-color: black;
+  width: 100vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#footerfox {
+  position: absolute;
+  z-index: -2;
+  top: 175vw;
+  left: 0px;
+  background-color: black;
+  width: 100vw;
+  height: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 #footerline {
+  display: none;
   width: 4vw;
   margin: 2.4vw;
 }
-#phonenumber {
-  font-family: "MonumentExtended-light";
-  font-weight: normal;
-  letter-spacing: 0.1vw;
-  font-size: 0.9vw;
-  color: #fcf8f5;
-  margin: 0;
+#footerbuttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
+
+/* ================================ MOBILE - ADDRESS BUTTON =============================== */
+
+#haydencolorado {
+  font-family: "MonumentExtended-regular";
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  font-size: 3.4vw;
+  color: #fcf8f5;
+  margin-left: 7vw;
+}
+#address {
+  background-color: black;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 4vw;
+}
+#address:hover {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 4vw;
+}
+#address:active {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 4vw;
+}
+.mobilearrow {
+  display: inline-block;
+  width: 10vw;
+  margin-right: 6vw;
+}
+
+/* ================================ MOBILE - PHONE BUTTON =============================== */
+
+#phonenumber {
+  font-family: "MonumentExtended-regular";
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  font-size: 3.4vw;
+  color: #fcf8f5;
+  margin-left: 7vw;
+}
+#call {
+  background-color: black;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin-bottom: 7vw;
+}
+#call:hover {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+#call:active {
+  background-color: #b77030;
+  border-color: #b77030;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+/* ================================ MOBILE - TYPOGRAPHY =============================== */
+
 h1 {
   font-family: "NeueWorld-CondensedRegular";
   font-weight: normal;
-  letter-spacing: 0.05vw;
-  font-size: 3.5vw;
+  letter-spacing: 0.08vw;
+  line-height: 12vw;
+  font-size: 13vw;
   color: #fcf8f5;
-  margin: 0;
+  margin: 15vw;
 }
-
 h2 {
   font-family: "NeueWorld-CondensedRegular";
   font-weight: normal;
-  letter-spacing: 0vw;
-  line-height: 4.1vw;
-  font-size: 3.5vw;
+  letter-spacing: 0.05vw;
+  line-height: 8.5vw;
+  font-size: 6vw;
   color: black;
   margin: 0;
 }
 h3 {
   font-family: "NeueWorld-CondensedRegular";
   font-weight: normal;
-  letter-spacing: 0.05vw;
-  line-height: 6vw;
-  font-size: 6vw;
+  letter-spacing: 0.08vw;
+  line-height: 12vw;
+  font-size: 13vw;
   color: #fcf8f5;
   margin: 0;
 }
@@ -323,28 +805,700 @@ h4 {
   font-family: "MonumentExtended-bold";
   font-weight: normal;
   letter-spacing: 0.05vw;
-  line-height: 2.4vw;
-  font-size: 1.6vw;
+  line-height: 5vw;
+  font-size: 3.8vw;
   color: #fcf8f5;
   margin: 0;
 }
 h5 {
-  font-family: "MonumentExtended-light";
+  font-family: "MonumentExtended-regular";
   font-weight: normal;
   letter-spacing: 0.1vw;
   line-height: 3.3vw;
-  font-size: 0.9vw;
-  color: #fcf8f5;
+  font-size: 2.8vw;
+  color: black;
   margin: 0;
 }
 .gold {
-  color: #aa733f;
+  color: #b77030;
 }
-#quote {
-  font-family: "NeueWorld-CondensedRegular";
-  font-weight: normal;
-  letter-spacing: 0.05vw;
-  font-size: 3.1vw;
-  color: #fcf8f5;
-  margin: 0;
+.black {
+  color: black;
+}
+
+/* ================================================================================ */
+/* ================================ DESKTOP WEBSITE =============================== */
+/* ================================================================================ */
+
+@media screen and (min-width: 600px) {
+  .mobilenav {
+    display: none;
+  }
+  #mobilelogo {
+    display: none;
+  }
+  #foxnav {
+    display: none;
+  }
+  #foxnavbrown {
+    display: none;
+  }
+
+  #indexbackground {
+    background: url("../images/indeximage.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 0vw;
+    left: 0px;
+  }
+  #foxbackground {
+    background: url("../images/brownfox.jpg");
+    background-size: 100vw;
+    position: absolute;
+    z-index: 0;
+    top: 0vw;
+    left: 0px;
+  }
+
+  a:link {
+    color: #b77030;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #b77030;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #b77030;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  a:active {
+    color: #b77030;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: black;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: "MonumentExtended-bold";
+    letter-spacing: 0.04vw;
+    font-size: 1.1vw;
+    color: #b77030;
+    width: 45vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 3.5vw;
+    align-items: center;
+    align-content: center;
+  }
+  #logounderline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    height: 2vw;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0.25vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    cursor: pointer;
+  }
+  #logounderline:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    height: 2vw;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.25vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    cursor: pointer;
+  }
+  .foxbox {
+    width: 10vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .fox {
+    width: 8vw;
+    height: 8vw;
+    background: url("../images/fox.svg") no-repeat;
+    display: inline-block;
+  }
+  .navbuttons {
+    width: 45vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0vw;
+  }
+  .navbutton {
+    font-family: "neueworld-Ultrabold";
+    letter-spacing: 0.05vw;
+    font-size: 1.2vw;
+    color: #b77030;
+    margin-right: 2.7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    height: 2vw;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0.25vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    cursor: pointer;
+  }
+  .navbutton:hover {
+    font-family: "neueworld-Ultrabold";
+    letter-spacing: 0.05vw;
+    font-size: 1.2vw;
+    color: #b77030;
+    margin-right: 2.7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    height: 2vw;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.25vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    cursor: pointer;
+  }
+
+  #maincontent {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 6vw;
+  }
+  #foxcontent {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 12vw;
+  }
+
+  /* ================================================================================ */
+  /* ================================ DESKTOP - ABOUT =============================== */
+  #aboutbackground {
+    background-color: #fcf8f5;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 0vw;
+    left: 0px;
+  }
+  #abouttext {
+    width: 100vw;
+    height: 44vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 6.5vw;
+    padding-right: 21.7vw;
+    padding-bottom: 6vw;
+  }
+  .twoup {
+    background-color: #fcf8f5;
+    width: 100vw;
+    height: 75.4vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 0;
+    top: 50vw;
+    left: 0px;
+  }
+  #jeremy {
+    background: url("../images/jeremy.jpg");
+    background-size: cover;
+    width: 50vw;
+    height: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: top;
+    align-content: center;
+    padding-left: 6.1vw;
+    padding-right: 18vw;
+    padding-top: 6.1vw;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+    margin-bottom: 0.4vw;
+  }
+  #austin {
+    background: url("../images/austin.jpg");
+    background-size: cover;
+    width: 50vw;
+    height: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: top;
+    align-content: center;
+    padding-left: 6.1vw;
+    padding-right: 19vw;
+    padding-top: 6.1vw;
+    margin-left: 0vw;
+    margin-right: 0.4vw;
+    margin-bottom: 0.4vw;
+  }
+
+  .partner {
+    margin-top: 40vw;
+    margin-bottom: 1vw;
+  }
+  #contact {
+    font-family: "MonumentExtended-regular";
+    font-weight: normal;
+    letter-spacing: 0.15vw;
+    font-size: 0.8vw;
+    color: #fcf8f5;
+    margin-left: 2.2vw;
+    margin-right: 1.1vw;
+    display: inline-block;
+    padding: 0.5vw;
+  }
+  .contact {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 16vw;
+    height: 4vw;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  .contact:hover {
+    background-color: #b77030;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 16vw;
+    height: 4vw;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  .contact:active {
+    background-color: #b77030;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 16vw;
+    height: 4vw;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  .contactarrow {
+    display: inline-block;
+    width: 2.5vw;
+    margin-right: 2.2vw;
+  }
+
+  /* ================================================================================ */
+  /* ================================ DESKTOP - PROJECTS =============================== */
+  #projectsbackground {
+    background-color: #fcf8f5;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 0vw;
+    left: 0px;
+  }
+  #foxrunresidence {
+    background: url("../images/foxrunthumbnail.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    align-content: left;
+    padding-left: 6.1vw;
+    padding-right: 6.1vw;
+    padding-top: 6.1vw;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+    margin-bottom: 0.4vw;
+    text-align: left;
+  }
+  .oneup {
+    background-color: #fcf8f5;
+    position: absolute;
+    z-index: 0;
+    top: 7vw;
+    left: 0px;
+    width: 100vw;
+    height: 60.4vw;
+    display: flex;
+    flex-direction: row;
+  }
+  #aperture {
+    font-family: "MonumentExtended-regular";
+    font-weight: normal;
+    letter-spacing: 0.15vw;
+    font-size: 0.8vw;
+    color: #fcf8f5;
+    margin-left: 2.2vw;
+    margin-right: 1.1vw;
+    display: inline-block;
+  }
+  .aperture {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 16vw;
+    height: 4vw;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  .aperture:hover {
+    background-color: #b77030;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 16vw;
+    height: 4vw;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  .aperture:active {
+    background-color: #b77030;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 16vw;
+    height: 4vw;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  #residence {
+    color: #fcf8f5;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+  }
+  #collab {
+    color: #b77030;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+  }
+  #coming {
+    color: #fcf8f5;
+    margin-top: 0vw;
+    margin-bottom: 26vw;
+  }
+
+  /* ================================================================================ */
+  /* ================================ DESKTOP - FOOTER =============================== */
+
+  #footer1 {
+    position: absolute;
+    z-index: 0;
+    top: 60vw;
+    left: 0px;
+    background-color: black;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #footer2 {
+    position: absolute;
+    z-index: 0;
+    top: 128vw;
+    left: 0px;
+    background-color: black;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #footer3 {
+    position: absolute;
+    z-index: -2;
+    top: 70vw;
+    left: 0px;
+    background-color: black;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #footerfox {
+    position: absolute;
+    z-index: -2;
+    top: 60vw;
+    left: 0px;
+    background-color: black;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #footerline {
+    display: block;
+    width: 4vw;
+    margin: 2.4vw;
+  }
+  #footerbuttons {
+    width: max-content;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 4vw;
+  }
+
+  /* ================================ DESKTOP - ADDRESS BUTTON =============================== */
+
+  #haydencolorado {
+    font-family: "MonumentExtended-regular";
+    font-weight: normal;
+    letter-spacing: 0.2vw;
+    font-size: 0.8vw;
+    color: #fcf8f5;
+    margin: 0vw;
+  }
+  #address {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0vw;
+    width: max-content;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  #address:hover {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0vw;
+    width: max-content;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  #address:active {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0vw;
+    width: max-content;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin: 0vw;
+  }
+  .mobilearrow {
+    display: none;
+  }
+
+  /* ================================ DESKTOP - PHONE BUTTON =============================== */
+
+  #phonenumber {
+    font-family: "MonumentExtended-regular";
+    font-weight: normal;
+    letter-spacing: 0.2vw;
+    font-size: 0.8vw;
+    color: #fcf8f5;
+    margin: 0vw;
+  }
+  #call {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0vw;
+    width: max-content;
+    height: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin-bottom: 0vw;
+  }
+  #call:hover {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0vw;
+    width: max-content;
+    height: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin-bottom: 0vw;
+  }
+  #call:active {
+    background-color: black;
+    border-color: #b77030;
+    border-style: solid;
+    border-width: 0vw;
+    width: max-content;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin-bottom: 0vw;
+  }
+  /* ================================ DESKTOP - TYPOGRAPHY =============================== */
+  h1 {
+    font-family: "NeueWorld-CondensedRegular";
+    font-weight: normal;
+    letter-spacing: 0.05vw;
+    font-size: 3.5vw;
+    color: #fcf8f5;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "NeueWorld-CondensedRegular";
+    font-weight: normal;
+    letter-spacing: 0vw;
+    line-height: 4.1vw;
+    font-size: 3.5vw;
+    color: black;
+    margin: 0;
+  }
+  h3 {
+    font-family: "NeueWorld-CondensedRegular";
+    font-weight: normal;
+    letter-spacing: 0.05vw;
+    line-height: 6vw;
+    font-size: 6vw;
+    color: #fcf8f5;
+    margin: 0;
+  }
+  h4 {
+    font-family: "MonumentExtended-bold";
+    font-weight: normal;
+    letter-spacing: 0.05vw;
+    line-height: 2.4vw;
+    font-size: 1.6vw;
+    color: #fcf8f5;
+    margin: 0;
+  }
+  h5 {
+    font-family: "MonumentExtended-light";
+    font-weight: normal;
+    letter-spacing: 0.1vw;
+    line-height: 3.3vw;
+    font-size: 0.9vw;
+    color: #fcf8f5;
+    margin: 0;
+  }
+  .gold {
+    color: #b77030;
+  }
+  #quote {
+    font-family: "NeueWorld-CondensedRegular";
+    font-weight: normal;
+    letter-spacing: 0.05vw;
+    font-size: 3.1vw;
+    color: #fcf8f5;
+    margin: 0;
+  }
 }
