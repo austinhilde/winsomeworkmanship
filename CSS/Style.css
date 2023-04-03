@@ -3,38 +3,24 @@
 /* ================================================================================ */
 
 @font-face {
-  font-family: "neueworld-ExtendedThin";
-  src: url("../CSS/fonts/neue-world/NeueWorld-ExtendedThin.woff") format("woff");
+  font-family: "Gatwick-Ultralight";
+  src: url("../CSS/fonts/Gatwick/Gatwick-Ultralight.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "neueworld-SemiCondensedUltrabold";
-  src: url("../CSS/fonts/neue-world/NeueWorld-SemiCondensedUltrabold.woff")
-    format("woff");
+  font-family: "Gatwick-Regular";
+  src: url("../CSS/fonts/Gatwick/Gatwick-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "neueworld-Ultrabold";
-  src: url("../CSS/fonts/neue-world/NeueWorld-Ultrabold.woff") format("woff");
+  font-family: "Gatwick-Bold";
+  src: url("../CSS/fonts/Gatwick/Gatwick-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "NeueWorld-SuperCondensedLight";
-  src: url("../CSS/fonts/neue-world/NeueWorld-SuperCondensedLight.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "NeueWorld-CondensedRegular";
-  src: url("../CSS/fonts/neue-world/NeueWorld-CondensedRegular.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+
 @font-face {
   font-family: "MonumentExtended-light";
   src: url("../CSS/fonts/Monument/MonumentExtended-light.woff") format("woff");
@@ -56,350 +42,182 @@
 
 * {
   box-sizing: border-box;
+}
 
   /* ================================================================================ */
   /* ================================= MOBILE WEBSITE =============================== */
   /* ================================================================================ */
 
-  body {
-    background-color: #fcf8f5;
-  }
 
-  /* PAGE 1 ================================ MOBILE - INDEX PAGE =============================== */
-}
-#indexbackground {
-  background: url("../images/indeximage.jpg");
-  background-size: 300vw;
-  background-position: -53vw -16vw;
-  position: absolute;
-  z-index: -2;
-  top: 20vw;
-  left: 0px;
-}
+  body {
+    background-color: #30323d;
+  }
+  header {
+    background-color: #30323d;
+    width: 100vw;
+    height: 170vw;
+  }
+  #albumbackground {
+    background-color: #30323D;
+    background-size: 97vw;
+    height: 168.5vw;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.3vw;
+    margin: 1.5vw;
+  }  
+  #maincontent {
+
+    width: 96.5vw;
+    height: 168.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0vw;
+  } 
 #foxnav {
-  width: 100vw;
-  height: 20vw;
+
+  width: 96.5vw;
+  height: 40vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-left: 1.2vw;
+  margin-top: 3vw;
 }
 #foxlogo {
-  width: 20vw;
-  height: 20vw;
-  margin-top: 0.6vw;
-  background: url("../images/whitefox-01.svg") no-repeat;
-  display: inline-block;
-}
-#maincontent {
-  width: 100vw;
-  height: 155vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-bottom: 45vw;
-}
-#headline {
-  text-align: center;
+
+  width: 11.5vw;
+  height: 14vw;
+  margin-top: 18vw;
+  background: url("../images/shield.svg") no-repeat;
+  display: inline-block
 }
 
-header {
-}
+.jeremyforkingbox {
 
-/* PAGE 2 ================================ MOBILE - FOX PAGE =============================== */
-
-#foxbackground {
-  background: url("../images/brownfox.jpg");
-  background-size: 340vw;
-  background-position: -120vw -18vw;
-  position: absolute;
-  z-index: -2;
-  top: 20vw;
-  left: 0px;
-}
-#foxcontent {
-  width: 100vw;
-  height: 175vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-bottom: 45vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
-#quote {
-  font-family: "NeueWorld-CondensedRegular";
-  font-weight: normal;
-  text-align: center;
-  letter-spacing: 0.05vw;
-  font-size: 10vw;
-  color: #fcf8f5;
-  margin: 0;
-}
-/* PAGE 3 ================================ MOBILE - ABOUT PAGE =============================== */
-
-#aboutbackground {
-  background-color: #fcf8f5;
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: -2;
-  top: 20vw;
-  left: 0px;
-}
-#abouttext {
-  background-color: #fcf8f5;
-  width: 100vw;
-  height: 100vw;
+  width: 80vw;
+  height: 44vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   align-content: center;
-  padding-left: 13vw;
-  padding-right: 13vw;
-  padding-bottom: 20vw;
+  margin-right: 1.5vw;
 }
-#foxnavbrown {
-  background-color: #fcf8f5;
-  width: 100vw;
-  height: 20vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#foxlogobrown {
-  width: 20vw;
-  height: 20vw;
-  background: url("../images/fox.svg") no-repeat;
-  display: inline-block;
-  margin-top: 0.6vw;
-}
-#foxcolor {
-  filter: aqua;
-}
-.twoup {
-  background-color: #fcf8f5;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: -2;
-  top: 140vw;
-  left: 0px;
-}
-#jeremy {
-  background: url("../images/jeremy.jpg");
-  background-size: 110vw;
-  background-position: 0vw -6vw;
-  width: 96vw;
-  height: 158vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: top;
-  align-content: center;
-  padding-left: 15vw;
-  padding-right: 22vw;
-  padding-top: 15vw;
+
+.jeremyforking {
+
+  width: 76vw;
+  height: 4vw;
+  padding-bottom: 18vw;
   margin-left: 2vw;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
-}
-#austin {
-  background: url("../images/austin.jpg");
-  background-size: 109.5vw;
-  background-position: -5vw -5.5vw;
-  width: 96vw;
-  height: 158vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: top;
-  align-content: center;
-  padding-left: 15vw;
-  padding-right: 30vw;
-  padding-top: 15vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
-}
-
-.partner {
-  margin-top: 78vw;
-  margin-bottom: 1vw;
-}
-#contact {
-  font-family: "MonumentExtended-regular";
-  font-weight: normal;
-  letter-spacing: 0.5vw;
-  font-size: 3.4vw;
-  color: #fcf8f5;
-  margin-left: 7vw;
-}
-.contact {
-  background-color: black;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 0vw;
-  margin-top: 2vw;
-}
-.contact:hover {
-  background-color: #b77030;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 0vw;
-  margin-top: 2vw;
-}
-.contact:active {
-  background-color: #b77030;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 0vw;
-  margin-top: 2vw;
-}
-.contactarrow {
+  background: url("../images/jeremyforkingmobile.svg") no-repeat;
   display: inline-block;
-  width: 10vw;
-  margin-right: 6vw;
 }
-
-/* PAGE 4 ================================ MOBILE - PROJECT PAGE =============================== */
-
-#projectsbackground {
-  background-color: #fcf8f5;
-  position: absolute;
-  z-index: -2;
-  top: 20vw;
-  left: 0px;
+.sunshinebox {
+  width: 97;
+  height: 84.25vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-#foxrunresidence {
-  background: url("../images/m-foxrun-06.jpg");
+.sunshine {
+  width: 96.8vw;
+  height: 84.1vw;
+  background: url("../images/sunshinemobile.png") no-repeat;
   background-size: cover;
-  width: 96vw;
-  height: 165vw;
+  background-position: center;
+  display: inline-block;
+}
+.availablenowbox {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.availablenow {
+  width: 100vw;
+  height: 170vw;
+  image-rendering: auto;
+  background: url("../images/availablenowmobile.jpg") no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: top;
+  justify-content: center;
+  align-items: center;
   align-content: center;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 12vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
+}
+#jeremyforkingtag {
+
+  color: #72819b;
+  margin-top: 63vw;
+  margin-bottom: 6vw;
+  margin-left: 0vw;
+}
+#albumavailablenow {
+
+  color: #72819b;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  margin-left: 0vw;
   text-align: center;
 }
-.oneup {
-  background-color: #fcf8f5;
-  width: 100vw;
+.buttoncontainer {
+  width: 60vw;
+  height: 11vw;
+  border-width: 0vw;
+  margin-top: 6vw;
+  margin-bottom: 0vw;
+  margin-left: 0vw;
+  display: inline-block;
+}
+  .bluebuttonoutline {
+  width: 60vw;
+  height: 11vw;
+  border-color: #72819b;
+  border-style: solid;
+  border-width: 0.3vw;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  z-index: -2;
-  top: 40vw;
-  left: 0px;
-}
-#aperture {
-  font-family: "MonumentExtended-regular";
-  font-weight: normal;
-  letter-spacing: 0.5vw;
-  font-size: 3.4vw;
-  color: #fcf8f5;
-  margin-left: 7vw;
-}
-.aperture {
-  background-color: black;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  cursor: pointer;
-  text-align: left;
-  margin: 0vw;
-  margin-top: 82vw;
+  font-family: "Gatwick-Regular";
+  letter-spacing: 1.4vw;
+  font-size: 2.5vw;
+  color: #72819b;
+  padding-left: 0vw;
 }
-.aperture:hover {
-  background-color: #b77030;
-  border-color: #b77030;
+.bluebuttonoutline:hover {
+  background-color: #c48a3d;
+  width: 60vw;
+  height: 11vw;
+  border-color: #c48a3d;
   border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
+  border-width: 0.3vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  cursor: pointer;
-  margin: 0vw;
-  margin-top: 82vw;
-}
-.aperture:active {
-  background-color: #b77030;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 0vw;
-  margin-top: 82vw;
+  font-family: "Gatwick-Regular";
+  letter-spacing: 1.4vw;
+  font-size: 2.5vw;
+  color: black;
+  padding-left: 0vw;
+  transition-duration: 0.4s;
 }
 
-#residence {
-  color: black;
-  margin-bottom: 2vw;
-}
-#coming {
-  margin-top: 4vw;
-}
+
 
 /* ================================================================================ */
 /* ================================ MOBILE - ACTIVE NAV =============================== */
@@ -443,45 +261,23 @@ a:active {
   z-index: -1;
   top: 0px;
   left: 0px;
-  background-color: #b77030;
   display: block;
 }
-#mobilelogo {
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  left: 20vw;
-  background-color: #b77030;
-  font-family: "MonumentExtended-bold";
-  font-weight: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 20vw;
-  width: 80vw;
-  letter-spacing: 0.2vw;
-  font-size: 3.4vw;
-  color: #fcf8f5;
-  margin-left: 0vw;
-  padding-right: 4.5vw;
-  cursor: pointer;
-}
+
 .hamburger {
-  background-color: #b77030;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 20vw;
-  width: 20vw;
+  width: 100vw;
   cursor: pointer;
 }
 
 .menu {
-  background-color: #b77030;
+  background-color: black;
   width: 100vw;
-  max-height: 0vw;
+  max-height: 0vh;
   overflow: hidden;
   transition: max-height 0.25s ease-in-out;
   display: flex;
@@ -489,90 +285,151 @@ a:active {
   justify-content: left;
   align-items: center;
   align-content: center;
+  margin-top: -20vw;
+  z-index: -1;
 }
 .toggle:checked + .hamburger + .menu {
-  max-height: 155vw;
+  max-height: 100vh;
 }
 input[type="checkbox"] {
   display: none;
 }
-#mobilefox {
-  background: url("../images/whitefox-01.svg") no-repeat;
-  width: 20vw;
-  height: 20vw;
+#mobileshield {
+  background: url("../images/shield.svg") no-repeat;
+  width: 11.5vw;
+  height: 14vw;
+  margin-top: 25vw;
+  margin-bottom: 18vw;
+  margin-left: 1.2vw;
   display: inline-block;
 }
 .navarrow {
   width: 16vw;
   padding-right: 5vw;
 }
-#mobileabout {
-  font-family: "neueworld-Ultrabold";
-  font-weight: normal;
+#mobilemusic {
+  font-family: "Gatwick-Regular";
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  letter-spacing: 0.2vw;
-  font-size: 6vw;
-  color: #fcf8f5;
+  letter-spacing: 2vw;
+  font-size: 3.3vw;
+  color: #c48a3d;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.39vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-bottom: 0vw;
+  width: 68vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#mobilelisten {
+  font-family: "Gatwick-Regular";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 2vw;
+  font-size: 3.3vw;
+  color: #c48a3d;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.39vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-bottom: 0vw;
+  width: 68vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+#mobileshows {
+  font-family: "Gatwick-Regular";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 2vw;
+  font-size: 3.3vw;
+  color: #c48a3d;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.39vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-bottom: 0vw;
+  width: 68vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+#mobilemerch {
+  font-family: "Gatwick-Regular";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 2vw;
+  font-size: 3.3vw;
+  color: #c48a3d;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.39vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  width: 68vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#mobileyoutube {
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 2vw;
+  font-size: 3.3vw;
+  color: #c48a3d;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  width: 68vw;
+  height: 18vw;
+  cursor: pointer;
   margin-top: 8vw;
-  border-color: #fcf8f5;
-  border-style: solid;
-  border-width: 0.4vw;
-  border-right: 0vw;
-  border-left: 0vw;
-  border-bottom: 0vw;
-  width: 65vw;
-  height: 18vw;
-  cursor: pointer;
-  text-align: left;
-  padding-left: 5vw;
 }
-
-#mobileprojects {
-  font-family: "neueworld-Ultrabold";
+#mobilefacebook {
+  font-family: "Gatwick-Regular";
   font-weight: normal;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  letter-spacing: 0.2vw;
-  font-size: 6vw;
-  color: #fcf8f5;
-  border-color: #fcf8f5;
+  letter-spacing: 2vw;
+  font-size: 3.3vw;
+  color: #c48a3d;
+  border-color: #c48a3d;
   border-style: solid;
-  border-width: 0.4vw;
+  border-width: 0vw;
   border-right: 0vw;
   border-left: 0vw;
-  border-bottom: 0vw;
-  width: 65vw;
+  width: 68vw;
   height: 18vw;
   cursor: pointer;
-  text-align: left;
-  padding-left: 5vw;
-}
-
-#mobilegram {
-  font-family: "neueworld-Ultrabold";
-  font-weight: normal;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  letter-spacing: 0.2vw;
-  font-size: 6vw;
-  color: #fcf8f5;
-  border-color: #fcf8f5;
-  border-style: solid;
-  border-width: 0.4vw;
-  border-right: 0vw;
-  border-left: 0vw;
-  width: 65vw;
-  height: 18vw;
-  cursor: pointer;
-  text-align: left;
-  padding-left: 5vw;
 }
 
 #menupaddingbottom {
@@ -584,239 +441,545 @@ input[type="checkbox"] {
   height: 72vw;
 }
 
+  /* ================================ MOBILE - MUSIC =============================== */
+ 
+  #bodymusic {
+    background-color: black;
+  }
+  #headermusic {
+    background-color: black;
+    width: 100vw;
+    height: 450vw;
+  }
+  #musicbackground {
+    background: url("../images/musicpagemobile.jpg") no-repeat;
+    background-color: black;
+    background-size: 100vw;
+    height: 450vw;
+  }
+  #maincontentmusic {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0vw;
+    
+  }
+ 
+  .jeremyforkingboxmusic {
+    width: 100vw;
+    height: 170vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    align-content: center;
+    padding-top: 14vw;
+  }
+  .jeremyforkingmusic {
+    width: 76vw;
+    height: 4vw;
+    margin-left: 1vw;
+    padding-bottom: 8vw;
+    background: url("../images/jeremyforkingmobile.svg") no-repeat;
+    display: inline-block;
+  }
+  #music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80vw;
+    height: 120vw;
+  }
+  
+  #discblank {
+    width: 70vw;
+    height: 14vw;
+    margin-bottom: 18vw;
+  }
+  #discbuttons {
+    width: 70vw;
+    height: 14vw;
+    margin-top: 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .buttoncontainer2 {
+    width: 60vw;
+    height: 11vw;
+    border-width: 0vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    margin-left: 0vw;
+    display: inline-block;
+  }
+  #songlist {
+    border-color: #72819b;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-bottom: 0vw;
+    border-left: 0vw;
+    border-right: 0vw;
+    width: 80vw;
+    height: 90vw;
+    margin-left: 0vw;
+    display: inline-block;
+  }
+  #songlisttitle {
+    width: 70vw;
+    height: 10vw;
+    margin-top: 6vw;
+    display: inline-block;  
+  }
+  #songnames {
+    width: 70vw;
+    height: 70vw;
+    display: inline-block; 
+  }
+  #credits {
+    border-color: #72819b;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-bottom: 0vw;
+    border-left: 0vw;
+    border-right: 0vw; 
+    width: 80vw;
+    height: 84vw;
+    margin-top: 14vw;
+    margin-bottom: 0vw;
+    display: inline-block;
+  }
+  #creditstype {
+
+    width: 80vw;
+    height: 12vw;
+    margin-top: 6vw;
+    display: inline-block;
+  }
+  
+  /* ================================ MOBILE "THANK YOU" =============================== */
+
+  #bodymusic {
+    background-color: black;
+  }
+  #headerthankyou {
+    background-color: black;
+    width: 100vw;
+    height: 98vh;
+  }
+  #thankyoubackground {
+    background-color: black;
+    background-size: 100vw;
+    height: 98vh;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.3vw;
+    margin-left: 0.89vw;
+    margin-right: 0.89vw;
+    margin-bottom: 0.89vw;
+    margin-top: 0.89vw;
+  }
+  #maincontentthankyou {
+    width: 98vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #thankyouline {
+    border-color: #72819b;
+    border-style: solid;
+    border-width: 0.3vw;
+    width: 77vw;
+    height: 77vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0vw;
+  }
+  #thankyouwindow {
+    background-color: #30323D;
+    width: 80vw;
+    height: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 18vh;
+  }
+  #xbox {
+    width: 70vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    margin-top: 2vw;
+  }
+  #x {
+    background: url("../images/x.svg") no-repeat;
+
+    width: 9vw;
+    height: 9vw;
+    display: inline-block;
+    margin-right: 2vw;
+  }
+  #thankyoutext {
+    width: 42vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 12vw;
+    font-family: "Gatwick-Ultralight";
+    font-weight: normal;
+    line-height: 11vw;
+    letter-spacing: 0.6vw;
+    font-size: 9vw;
+    color: #72819b;
+  }
 /* ================================================================================ */
 /* ================================ MOBILE - FOOTER =============================== */
 
-#footer1 {
-  position: absolute;
-  z-index: -2;
-  top: 175vw;
-  left: 0px;
-  background-color: black;
+#footermargin {
+  background-color: #30323D;
   width: 100vw;
-  height: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#footer2 {
-  position: absolute;
-  z-index: -2;
-  top: 460vw;
-  left: 0px;
-  background-color: black;
-  width: 100vw;
-  height: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#footer3 {
-  position: absolute;
-  z-index: -2;
-  top: 207vw;
-  left: 0px;
-  background-color: black;
-  width: 100vw;
-  height: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#footerfox {
-  position: absolute;
-  z-index: -2;
-  top: 175vw;
-  left: 0px;
-  background-color: black;
-  width: 100vw;
-  height: 80vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-#footerline {
-  display: none;
-  width: 4vw;
-  margin: 2.4vw;
-}
-#footerbuttons {
+  height: 170vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
+#footersize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #30323D;
+  width: 97vw;
+  height: 168vw;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.3vw;
+  margin: 1.5vw;
+}
+#rowelements {
 
-/* ================================ MOBILE - ADDRESS BUTTON =============================== */
+  height: 74vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+#swordbox {
 
-#haydencolorado {
-  font-family: "MonumentExtended-regular";
-  font-weight: normal;
-  letter-spacing: 0.5vw;
-  font-size: 3.4vw;
-  color: #fcf8f5;
-  margin-left: 7vw;
-}
-#address {
-  background-color: black;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
+  height: 6vw;
+  width: 25vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  cursor: pointer;
-  margin: 4vw;
-}
-#address:hover {
-  background-color: #b77030;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 4vw;
-}
-#address:active {
-  background-color: #b77030;
-  border-color: #b77030;
-  border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 4vw;
-}
-.mobilearrow {
+  margin-bottom: 12vw;
+
+}#sword {
+  background: url("../images/sword.svg") no-repeat;
+  height: 5vw;
+  width: 12vw;
   display: inline-block;
-  width: 10vw;
-  margin-right: 6vw;
+}
+#footernav {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 40vw;
+  height: 11vw;
+  margin-right: 0vw;
+}
+.footernav {
+  
+  height: 5vw;
+  margin-left: 0vw;
+  display: inline-block;
+}
+.footernav:hover {
+  height: 1.4vw;
+  display: inline-block;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-top: 0vw;
+  transition-duration: 0.4s;
 }
 
-/* ================================ MOBILE - PHONE BUTTON =============================== */
+#subscribe {
 
-#phonenumber {
-  font-family: "MonumentExtended-regular";
+  
+  width: 78vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0vw;
+}
+#form {
+
+  
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#field {
+  background-color: #30323D;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-color: #72819b;
+  color: #72819b;
+  height: 11vw;
+  width: 75vw;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Gatwick-Bold";
   font-weight: normal;
   letter-spacing: 0.5vw;
-  font-size: 3.4vw;
-  color: #fcf8f5;
-  margin-left: 7vw;
+  line-height: 1vw;
+  font-size: 2.5vw;
+  padding-left: 5vw;
 }
-#call {
-  background-color: black;
-  border-color: #b77030;
+#field:focus, textarea {
+  outline: none !important;
+  background-color: #72819b;
+  color: #30323D;
+}
+#field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #72819b;
+  opacity: 1; /* Firefox */
+}
+#field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #72819b;
+}
+#field::-ms-input-placeholder { /* Microsoft Edge */
+  color: #72819b;
+}
+
+.subscribebutton {
+  background-color: #30323D;
+  border-width: 0.3vw;
   border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
+  border-color: #c48a3d;
+  color: #c48a3d;
+  height: 11vw;
+  width: 60vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  letter-spacing: 1.4vw;
+  line-height: 1vw;
+  font-size: 2.5vw;
+  padding-left: 0vw;
+  margin-left: 0vw;
+  margin-top: 2vw;
+}
+.subscribebutton:hover {
+  background-color: #c48a3d;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-color: #c48a3d;
+  color: black;
+  height: 11vw;
+  width: 60vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  letter-spacing: 1.4vw;
+  line-height: 1vw;
+  font-size: 2.5vw;
+  padding-left: 0vw;
+  margin-left: 0vw;
+  margin-top: 2vw;
+  transition-duration: 0.4s;
+}
+#email {
+  
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   align-content: center;
-  cursor: pointer;
-  margin-bottom: 7vw;
+  width: 60vw;
+  height: 11vw;
+  margin-left: 1vw;
 }
-#call:hover {
-  background-color: #b77030;
-  border-color: #b77030;
+.email {
+
+  
+  background-color: #30323D;
+  border-width: 0.3vw;
   border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
+  border-color: #c48a3d;
+  color: #c48a3d;
+  height: 11vw;
+  width: 60vw;
+  text-align: center;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  cursor: pointer;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  letter-spacing: 1.4vw;
+  line-height: 1vw;
+  font-size: 2.2vw;
+  padding-left: 0vw;
+  margin-left: 0vw;
 }
-#call:active {
-  background-color: #b77030;
-  border-color: #b77030;
+.email:hover {
+  background-color: #c48a3d;
+  border-width: 0.3vw;
   border-style: solid;
-  border-width: 0.6vw;
-  width: 65vw;
-  height: 15vw;
+  border-color: #c48a3d;
+  color: black;
+  height: 11vw;
+  width: 60vw;
+  text-align: center;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  cursor: pointer;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  letter-spacing: 1.4vw;
+  line-height: 1vw;
+  font-size: 2.2vw;
+  padding-left: 0vw;
+  margin-left: 0vw;
+  transition-duration: 0.4s;
+}
+#copyright {
+  height: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 24vw;
+  margin-bottom: 10vw;
+}
+#yearwinsome {
+  height: 3vw;
+  display: inline-block;
+  border-color: #c48a3d;
+  border-style: solid;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  color: #c48a3d;
+  letter-spacing: 1.2vw;
+  line-height: 1vw;
+  font-size: 1.5vw;
+  border-width: 0vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-top: 0vw;
+}
+#winsome {
+  height: 3vw;
+  display: inline-block;
+  border-color: #30323D;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-top: 0vw;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  color: #c48a3d;
+  letter-spacing: 1.2vw;
+  line-height: 1vw;
+  font-size: 1.8vw;
+}
+#winsome:hover {
+  height: 3vw;
+  display: inline-block;
+  border-color: #c48a3d;
+  border-style: solid;
+  border-width: 0.3vw;
+  border-right: 0vw;
+  border-left: 0vw;
+  border-top: 0vw;
+  font-family: "Gatwick-Regular";
+  font-weight: normal;
+  color: #c48a3d;
+  letter-spacing: 1.2vw;
+  line-height: 1vw;
+  font-size: 1.8vw;
+  transition-duration: 0.4s;
 }
 
 /* ================================ MOBILE - TYPOGRAPHY =============================== */
 
 h1 {
-  font-family: "NeueWorld-CondensedRegular";
+  font-family: "Gatwick-Ultralight";
   font-weight: normal;
-  letter-spacing: 0.08vw;
   line-height: 12vw;
-  font-size: 13vw;
+  letter-spacing: 2vw;
+  font-size: 10vw;
   color: #fcf8f5;
-  margin: 15vw;
+  margin: 0;
 }
+
 h2 {
-  font-family: "NeueWorld-CondensedRegular";
+  font-family: "Gatwick-Regular";
   font-weight: normal;
-  letter-spacing: 0.05vw;
-  line-height: 8.5vw;
-  font-size: 6vw;
+  letter-spacing: 1vw;
+  line-height: 1vw;
+  font-size: 2vw;
   color: black;
   margin: 0;
 }
-h3 {
-  font-family: "NeueWorld-CondensedRegular";
-  font-weight: normal;
-  letter-spacing: 0.08vw;
-  line-height: 12vw;
-  font-size: 13vw;
-  color: #fcf8f5;
-  margin: 0;
-}
+
 h4 {
-  font-family: "MonumentExtended-bold";
+  font-family: "Gatwick-Regular";
   font-weight: normal;
-  letter-spacing: 0.05vw;
-  line-height: 5vw;
-  font-size: 3.8vw;
-  color: #fcf8f5;
-  margin: 0;
-}
-h5 {
-  font-family: "MonumentExtended-regular";
-  font-weight: normal;
-  letter-spacing: 0.1vw;
-  line-height: 3.3vw;
-  font-size: 2.8vw;
-  color: black;
+  letter-spacing: 0.6vw;
+  line-height: 6vw;
+  font-size: 2.4vw;
+  color: #72819b;
   margin: 0;
 }
 .gold {
@@ -830,7 +993,7 @@ h5 {
 /* ================================ DESKTOP WEBSITE =============================== */
 /* ================================================================================ */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .mobilenav {
     display: none;
   }
@@ -843,133 +1006,149 @@ h5 {
   #foxnavbrown {
     display: none;
   }
-
-  #indexbackground {
-    background: url("../images/indeximage.jpg");
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    top: 0vw;
-    left: 0px;
+  body {
+    background-color: #30323d;
   }
-  #foxbackground {
-    background: url("../images/brownfox.jpg");
-    background-size: 100vw;
-    position: absolute;
-    z-index: 0;
-    top: 0vw;
-    left: 0px;
+  header {
+    background-color: #30323d;
+    width: 100vw;
+    height: 100vw;
+  }
+  #albumbackground {
+    background-color: #30323D;
+    background-size: 99vw;
+    height: 99vw;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.11vw;
+    margin: 0.89vw;
   }
 
   a:link {
-    color: #b77030;
+    color: #c48a3d;
     background-color: transparent;
     text-decoration: none;
   }
 
   a:visited {
-    color: #b77030;
+    color: #c48a3d;
     background-color: transparent;
     text-decoration: none;
   }
 
   a:hover {
-    color: #b77030;
+    color: #c48a3d;
     background-color: transparent;
     text-decoration: none;
     transition: 0.3s;
   }
 
   a:active {
-    color: #b77030;
+    color: #c48a3d;
     background-color: transparent;
     text-decoration: none;
   }
-
-  body {
-    background-color: black;
+  .isDisabled {
+    color: #966429 !important;
+    cursor: pointer;
+    font-family: "Gatwick-Regular";
+    letter-spacing: 0.4vw;
+    font-size: 0.7vw;
+    margin-right: 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    height: 2vw;
   }
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .logo {
-    font-family: "MonumentExtended-bold";
-    letter-spacing: 0.04vw;
-    font-size: 1.1vw;
-    color: #b77030;
+  .leftnav {
     width: 45vw;
-    height: 7vw;
+    height: 10vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 3.5vw;
+    padding-left: 5vw;
     align-items: center;
     align-content: center;
   }
-  #logounderline {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    width: max-content;
-    height: 2vw;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0.25vw;
-    border-right: 0vw;
-    border-left: 0vw;
-    border-top: 0vw;
-    cursor: pointer;
-  }
-  #logounderline:hover {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    width: max-content;
-    height: 2vw;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0.25vw;
-    border-right: 0vw;
-    border-left: 0vw;
-    border-top: 0vw;
-    cursor: pointer;
-  }
-  .foxbox {
-    width: 10vw;
-    height: 7vw;
+  .shieldboxdead {
+    width: 4vw;
+    height: 4.7vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
+    border-color: #30323D;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    margin-top: 2.5vw;
   }
-  .fox {
-    width: 8vw;
-    height: 8vw;
-    background: url("../images/fox.svg") no-repeat;
+    .shieldbox {
+    width: 4vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-color: #30323D;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    margin-top: 2.5vw;
+  }
+  .shieldbox:hover {
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
+  }
+  .shielddead {
+    width: 3.3vw;
+    height: 3.3vw;
+    background: url("../images/shield.svg") no-repeat;
     display: inline-block;
   }
-  .navbuttons {
+  .shield {
+    width: 3.3vw;
+    height: 3.3vw;
+    background: url("../images/shield.svg") no-repeat;
+    display: inline-block;
+  }
+  .rightnav {
     width: 45vw;
-    height: 7vw;
+    height: 10vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 0vw;
+    align-content: center;
+    padding-right: 5vw;
   }
-  .navbutton {
-    font-family: "neueworld-Ultrabold";
-    letter-spacing: 0.05vw;
-    font-size: 1.2vw;
-    color: #b77030;
-    margin-right: 2.7vw;
+  .spacer {
+    font-family: "Gatwick-Bold";
+    letter-spacing: 0.4vw;
+    font-size: 0.8vw;
+    color: #c48a3d;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 0.25vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -979,18 +1158,39 @@ h5 {
     height: 2vw;
     border-color: transparent;
     border-style: solid;
-    border-width: 0.25vw;
+    border-width: 0vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    cursor: pointer;
+  }
+  .navbutton {
+    font-family: "Gatwick-Regular";
+    letter-spacing: 0.4vw;
+    font-size: 0.7vw;
+    color: #c48a3d;
+    margin-right: 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+    height: 2vw;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0.1vw;
     border-right: 0vw;
     border-left: 0vw;
     border-top: 0vw;
     cursor: pointer;
   }
   .navbutton:hover {
-    font-family: "neueworld-Ultrabold";
-    letter-spacing: 0.05vw;
-    font-size: 1.2vw;
-    color: #b77030;
-    margin-right: 2.7vw;
+    font-family: "Gatwick-Regular";
+    letter-spacing: 0.4vw;
+    font-size: 0.7vw;
+    color: #c48a3d;
+    margin-right: 0vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -998,507 +1198,676 @@ h5 {
     align-content: center;
     width: max-content;
     height: 2vw;
-    border-color: #b77030;
+    border-color: #c48a3d;
     border-style: solid;
-    border-width: 0.25vw;
+    border-width: 0.1vw;
     border-right: 0vw;
     border-left: 0vw;
     border-top: 0vw;
-    cursor: pointer;
+    transition-duration: 0.4s;
   }
-
+  .jeremyforkingbox {
+    width: 98vw;
+    height: 39.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .jeremyforking {
+    width: 55vw;
+    height: 3vw;
+    padding-bottom: 8vw;
+    background: url("../images/jeremyforking.svg") no-repeat;
+    display: inline-block;
+  }
+  .sunshinebox {
+    width: 98.1vw;
+    height: 49.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .sunshine {
+    width: 98.1vw;
+    height: 49.5vw;
+    background: url("../images/sunshine.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
   #maincontent {
-    width: 100vw;
-    height: 50vw;
+    width: 98vw;
+    height: 89.6vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-bottom: 6vw;
-  }
-  #foxcontent {
-    width: 100vw;
-    height: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding-bottom: 12vw;
-  }
+    padding-bottom: 0vw;
+  }  
 
-  /* ================================================================================ */
-  /* ================================ DESKTOP - ABOUT =============================== */
-  #aboutbackground {
-    background-color: #fcf8f5;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    top: 0vw;
-    left: 0px;
-  }
-  #abouttext {
-    width: 100vw;
-    height: 44vw;
+  .availablenowbox {
+    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-left: 6.5vw;
-    padding-right: 21.7vw;
-    padding-bottom: 6vw;
   }
-  .twoup {
-    background-color: #fcf8f5;
+  .availablenow {
     width: 100vw;
-    height: 75.4vw;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    z-index: 0;
-    top: 50vw;
-    left: 0px;
-  }
-  #jeremy {
-    background: url("../images/jeremy.jpg");
+    height: 50vw;
+    image-rendering: auto;
+    background: url("../images/availablenow.jpg") no-repeat;
     background-size: cover;
-    width: 50vw;
-    height: 75vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: top;
-    align-content: center;
-    padding-left: 6.1vw;
-    padding-right: 18vw;
-    padding-top: 6.1vw;
-    margin-left: 0.4vw;
-    margin-right: 0.4vw;
-    margin-bottom: 0.4vw;
-  }
-  #austin {
-    background: url("../images/austin.jpg");
-    background-size: cover;
-    width: 50vw;
-    height: 75vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: top;
-    align-content: center;
-    padding-left: 6.1vw;
-    padding-right: 19vw;
-    padding-top: 6.1vw;
-    margin-left: 0vw;
-    margin-right: 0.4vw;
-    margin-bottom: 0.4vw;
-  }
-
-  .partner {
-    margin-top: 40vw;
-    margin-bottom: 1vw;
-  }
-  #contact {
-    font-family: "MonumentExtended-regular";
-    font-weight: normal;
-    letter-spacing: 0.15vw;
-    font-size: 0.8vw;
-    color: #fcf8f5;
-    margin-left: 2.2vw;
-    margin-right: 1.1vw;
     display: inline-block;
-    padding: 0.5vw;
   }
-  .contact {
-    background-color: black;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0.3vw;
-    width: 16vw;
-    height: 4vw;
-    display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
-    margin: 0vw;
+  #jeremyforkingtag {
+    color: #72819b;
+    margin-top: 5vw;
+    margin-bottom: 0.8vw;
+    margin-left: 5.2vw;
   }
-  .contact:hover {
-    background-color: #b77030;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0.3vw;
-    width: 16vw;
-    height: 4vw;
-    display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
-    margin: 0vw;
-  }
-  .contact:active {
-    background-color: #b77030;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0.3vw;
-    width: 16vw;
-    height: 4vw;
-    display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
-    margin: 0vw;
-  }
-  .contactarrow {
-    display: inline-block;
-    width: 2.5vw;
-    margin-right: 2.2vw;
-  }
-
-  /* ================================================================================ */
-  /* ================================ DESKTOP - PROJECTS =============================== */
-  #projectsbackground {
-    background-color: #fcf8f5;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    top: 0vw;
-    left: 0px;
-  }
-  #foxrunresidence {
-    background: url("../images/foxrunthumbnail.jpg");
-    background-size: cover;
-    width: 100vw;
-    height: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    align-content: left;
-    padding-left: 6.1vw;
-    padding-right: 6.1vw;
-    padding-top: 6.1vw;
-    margin-left: 0.4vw;
-    margin-right: 0.4vw;
-    margin-bottom: 0.4vw;
+  #albumavailablenow {
+    color: #72819b;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    margin-left: 5vw;
     text-align: left;
   }
-  .oneup {
-    background-color: #fcf8f5;
-    position: absolute;
-    z-index: 0;
-    top: 7vw;
-    left: 0px;
+  .buttoncontainer {
+    width: 13vw;
+    height: 2.8vw;
+    border-width: 0.1vw;
+    margin-top: 2.3vw;
+    margin-bottom: 0vw;
+    margin-left: 5vw;
+    display: inline-block;
+  }
+    .bluebuttonoutline {
+    width: 13vw;
+    height: 2.8vw;
+    border-color: #72819b;
+    border-style: solid;
+    border-width: 0.11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Gatwick-Regular";
+    letter-spacing: 0.4vw;
+    font-size: 0.7vw;
+    color: #72819b;
+    padding-left: 0.45vw;
+  }
+  .bluebuttonoutline:hover {
+    background-color: #c48a3d;
+    width: 13vw;
+    height: 2.8vw;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Gatwick-Regular";
+    letter-spacing: 0.4vw;
+    font-size: 0.7vw;
+    color: black;
+    padding-left: 0.45vw;
+    transition-duration: 0.4s;
+  }
+  /* ================================================================================ */
+  /* ================================ DESKTOP "MUSIC" =============================== */
+  /* ================================================================================ */
+  #bodymusic {
+    background-color: black;
+  }
+  #headermusic {
+    background-color: black;
     width: 100vw;
-    height: 60.4vw;
+    height: 125vw;
+  }
+  #musicbackground {
+    background-image: url("../images/musicpage-03-03-03-03.jpg");
+    background-size: cover;
+    background-color: black;
+    background-size: 100vw;
+    height: 124vw;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.11vw;
+    margin: 0.89vw;
+  }
+  #maincontentmusic {
+    width: 98vw;
+    height: 125;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0vw;
+  }
+  .shieldboxmusic {
+    width: 4vw;
+    height: 5vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    margin-top: 2.5vw;
   }
-  #aperture {
-    font-family: "MonumentExtended-regular";
-    font-weight: normal;
-    letter-spacing: 0.15vw;
-    font-size: 0.8vw;
-    color: #fcf8f5;
-    margin-left: 2.2vw;
-    margin-right: 1.1vw;
+  .shieldboxmusic:hover {
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
+  }
+  .jeremyforkingboxmusic {
+    width: 98vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 0vw;
+  }
+  .jeremyforkingmusic {
+    width: 55vw;
+    height: 3vw;
+    padding-bottom: 8vw;
+    background: url("../images/jeremyforking.svg") no-repeat;
     display: inline-block;
   }
-  .aperture {
+  #music {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    width: 80vw;
+    height: 35vw;
+  }
+  
+  #discblank {
+    width: 35vw;
+    height: 35vw;
+    display: inline-block;
+    margin-bottom: 0vw;
+  }
+  #discbuttons {
+    width: 30vw;
+    height: 5vw;
+    margin-top: 29.6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .buttoncontainer2 {
+    width: 13vw;
+    height: 2.8vw;
+    border-width: 0.1vw;
+    margin-top: 2.3vw;
+    margin-bottom: 0vw;
+    margin-left: 5vw;
+    display: inline-block;
+  }
+  #songlist {
+    border-color: #72819b;
+    border-style: solid;
+    border-width: 0.11vw;
+    border-bottom: 0vw;
+    border-left: 0vw;
+    border-right: 0vw;
+    width: 30vw;
+    height: 35vw;
+    margin-left: 14.5vw;
+    display: inline-block;
+  }
+  #songlisttitle {
+    width: 35vw;
+    height: 5vw;
+    margin-top: 4vw;
+    display: inline-block;  
+  }
+  #songnames {
+    width: 35vw;
+    height: 26vw;
+    display: inline-block;  
+  }
+  #credits {
+    border-color: #72819b;
+    border-style: solid;
+    border-width: 0.11vw;
+    border-bottom: 0vw;
+    border-left: 0vw;
+    border-right: 0vw;
+    width: 80vw;
+    height: 16vw;
+    margin-top: 9vw;
+    margin-bottom: 9vw;
+    display: inline-block;
+  }
+  #creditstype {
+
+    width: 80vw;
+    height: 12vw;
+    margin-top: 4vw;
+    display: inline-block;
+  }
+  /* ================================================================================ */
+  /* ================================ DESKTOP "THANK YOU" =============================== */
+  /* ================================================================================ */
+  #bodymusic {
     background-color: black;
-    border-color: #b77030;
+  }
+  #headerthankyou {
+    background-color: black;
+    width: 100vw;
+    height: 98vh;
+  }
+  #thankyoubackground {
+    background-color: black;
+    background-size: 100vw;
+    height: 98vh;
+    border-color: #c48a3d;
     border-style: solid;
-    border-width: 0.3vw;
-    width: 16vw;
-    height: 4vw;
-    display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
-    margin: 0vw;
+    border-width: 0.11vw;
+    margin-left: 0.89vw;
+    margin-right: 0.89vw;
+    margin-bottom: 0.89vw;
+    margin-top: 0.89vw;
   }
-  .aperture:hover {
-    background-color: #b77030;
-    border-color: #b77030;
+  #maincontentthankyou {
+    width: 98vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #thankyouline {
+    border-color: #72819b;
     border-style: solid;
-    border-width: 0.3vw;
-    width: 16vw;
+    border-width: 0.11vw;
+    width: 38vw;
+    height: 38vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0vw;
+  }
+  #thankyouwindow {
+    background-color: #30323D;
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 18vh;
+  }
+  #xbox {
+
+    width: 34vw;
     height: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    margin-top: 2vw;
+  }
+  #x {
+    background: url("../images/x.svg") no-repeat;
+
+    width: 3.3vw;
+    height: 3.3vw;
     display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
-    margin: 0vw;
+    margin-right: 0.4vw;
   }
-  .aperture:active {
-    background-color: #b77030;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0.3vw;
-    width: 16vw;
-    height: 4vw;
-    display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
-    margin: 0vw;
-  }
-  #residence {
-    color: #fcf8f5;
-    margin-top: 0vw;
-    margin-bottom: 0vw;
-  }
-  #collab {
-    color: #b77030;
-    margin-top: 0vw;
-    margin-bottom: 0vw;
-  }
-  #coming {
-    color: #fcf8f5;
-    margin-top: 0vw;
-    margin-bottom: 26vw;
+  #thankyoutext {
+
+    width: 18vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 7vw;
+    font-family: "Gatwick-Ultralight";
+    font-weight: normal;
+    line-height: 3.8vw;
+    letter-spacing: 0.6vw;
+    font-size: 3vw;
+    color: #72819b;
   }
 
   /* ================================================================================ */
   /* ================================ DESKTOP - FOOTER =============================== */
 
-  #footer1 {
-    position: absolute;
-    z-index: 0;
-    top: 60vw;
-    left: 0px;
-    background-color: black;
+  #footermargin {
+    background-color: #30323D;
     width: 100vw;
-    height: 20vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #footersize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #30323D;
+    width: 98.2vw;
+    height: 28vw;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.11vw;
+    margin: 0.89vw;
+  }
+  #rowelements {
+    height: 6vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-  #footer2 {
-    position: absolute;
-    z-index: 0;
-    top: 128vw;
-    left: 0px;
-    background-color: black;
-    width: 100vw;
-    height: 20vw;
+  #swordbox {
+    height: 9vw;
+    width: 9vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-  }
-  #footer3 {
-    position: absolute;
-    z-index: -2;
-    top: 70vw;
-    left: 0px;
-    background-color: black;
-    width: 100vw;
-    height: 20vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-  #footerfox {
-    position: absolute;
-    z-index: -2;
-    top: 60vw;
-    left: 0px;
-    background-color: black;
-    width: 100vw;
-    height: 20vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
+    margin-top: 0vw;
+    margin-bottom: 0vw;
 
-  #footerline {
-    display: block;
+  }#sword {
+    background: url("../images/sword.svg") no-repeat;
+    height: 1.6vw;
     width: 4vw;
-    margin: 2.4vw;
+    display: inline-block;
   }
-  #footerbuttons {
-    width: max-content;
-    height: 20vw;
+  #footernav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    width: 22vw;
+    height: 3vw;
+    margin-right: 1vw;
+  }
+  .footernav {
+    height: 1.4vw;
+    margin-left: 1vw;
+    display: inline-block;
+  }
+  .footernav:hover {
+    height: 1.4vw;
+    display: inline-block;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
+  }
+  
+  #subscribe {
+    width: 45vw;
+    height: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-bottom: 4vw;
+    margin-bottom: 0vw;
   }
-
-  /* ================================ DESKTOP - ADDRESS BUTTON =============================== */
-
-  #haydencolorado {
-    font-family: "MonumentExtended-regular";
+  #form {
+    height: 2.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+  }
+  #field {
+    background-color: #30323D;
+    border-width: 0.11vw;
+    border-style: solid;
+    border-color: #72819b;
+    color: #72819b;
+    height: 2.8vw;
+    width: 24vw;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Gatwick-Bold";
     font-weight: normal;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.14vw;
+    line-height: 1vw;
     font-size: 0.8vw;
-    color: #fcf8f5;
-    margin: 0vw;
+    padding-left: 2vw;
   }
-  #address {
-    background-color: black;
-    border-color: #b77030;
+  #field:focus, textarea {
+    outline: none !important;
+    background-color: #72819b;
+    color: #30323D;
+  }
+  #field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #72819b;
+    opacity: 1; /* Firefox */
+  }
+  #field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #72819b;
+  }
+  #field::-ms-input-placeholder { /* Microsoft Edge */
+    color: #72819b;
+  }
+  .subscribebutton {
+    background-color: #30323D;
+    border-width: 0.11vw;
     border-style: solid;
-    border-width: 0vw;
-    width: max-content;
-    height: 3vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    margin: 0vw;
-  }
-  #address:hover {
-    background-color: black;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0vw;
-    width: max-content;
-    height: 3vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    margin: 0vw;
-  }
-  #address:active {
-    background-color: black;
-    border-color: #b77030;
-    border-style: solid;
-    border-width: 0vw;
-    width: max-content;
-    height: 3vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    margin: 0vw;
-  }
-  .mobilearrow {
-    display: none;
-  }
-
-  /* ================================ DESKTOP - PHONE BUTTON =============================== */
-
-  #phonenumber {
-    font-family: "MonumentExtended-regular";
+    border-color: #c48a3d;
+    color: #c48a3d;
+    height: 2.8vw;
+    width: 13vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Gatwick-Regular";
     font-weight: normal;
-    letter-spacing: 0.2vw;
-    font-size: 0.8vw;
-    color: #fcf8f5;
-    margin: 0vw;
+    letter-spacing: 0.4vw;
+    line-height: 1vw;
+    font-size: 0.7vw;
+    padding-left: 0.9vw;
+    margin-left: -0.11vw;
+    margin-top: 0vw;
   }
-  #call {
-    background-color: black;
-    border-color: #b77030;
+  .subscribebutton:hover {
+    background-color: #c48a3d;
+    border-width: 0.11vw;
     border-style: solid;
-    border-width: 0vw;
-    width: max-content;
-    height: 2vw;
+    border-color: #c48a3d;
+    color: black;
+    height: 2.8vw;
+    width: 13vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Gatwick-Regular";
+    font-weight: normal;
+    letter-spacing: 0.4vw;
+    line-height: 1vw;
+    font-size: 0.7vw;
+    padding-left: 0.9vw;
+    margin-left: -0.11vw;
+    margin-top: 0vw;
+    transition-duration: 0.4s;
+  }
+  #email {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     align-content: center;
-    cursor: pointer;
-    margin-bottom: 0vw;
+    width: 22vw;
+    height: 3vw;
+    margin-left: 1vw;
+
   }
-  #call:hover {
-    background-color: black;
-    border-color: #b77030;
+  .email {
+    height: 1.4vw;
+    width: 12vw;
+    display: inline-block;
+    border-color: #30323D;
     border-style: solid;
-    border-width: 0vw;
-    width: max-content;
-    height: 2vw;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+
+  }
+  .email:hover {
+    height: 1.4vw;
+    width: 12vw;
+    display: inline-block;
+    border-color: #c48a3d;
+    background-color: #30323D;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
+  }
+  #copyright {
+    height: 9vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    cursor: pointer;
+    margin-top: 0vw;
     margin-bottom: 0vw;
   }
-  #call:active {
-    background-color: black;
-    border-color: #b77030;
+  #yearwinsome {
+    height: 1.4vw;
+    display: inline-block;
+    border-color: #c48a3d;
     border-style: solid;
     border-width: 0vw;
-    width: max-content;
-    height: 15vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    cursor: pointer;
-    margin-bottom: 0vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
   }
+  #winsome {
+    font-family: "Gatwick-Regular";
+    font-weight: normal;
+    letter-spacing: 0.25vw;
+    line-height: 1vw;
+    font-size: 0.7vw;
+    color: #c48a3d;
+    height: 1.4vw;
+    display: inline-block;
+    border-color: #30323D;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
+  }
+  #winsome:hover {
+    font-family: "Gatwick-Regular";
+    font-weight: normal;
+    letter-spacing: 0.25vw;
+    line-height: 1vw;
+    font-size: 0.7vw;
+    height: 1.4vw;
+    display: inline-block;
+    border-color: #c48a3d;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-right: 0vw;
+    border-left: 0vw;
+    border-top: 0vw;
+    transition-duration: 0.4s;
+  }
+
+
+
   /* ================================ DESKTOP - TYPOGRAPHY =============================== */
   h1 {
-    font-family: "NeueWorld-CondensedRegular";
+    font-family: "Gatwick-Ultralight";
     font-weight: normal;
-    letter-spacing: 0.05vw;
-    font-size: 3.5vw;
+    line-height: 3.3vw;
+    letter-spacing: 0.6vw;
+    font-size: 3vw;
     color: #fcf8f5;
     margin: 0;
   }
 
   h2 {
-    font-family: "NeueWorld-CondensedRegular";
+    font-family: "Gatwick-Regular";
     font-weight: normal;
-    letter-spacing: 0vw;
-    line-height: 4.1vw;
-    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
+    line-height: 1vw;
+    font-size: 0.7vw;
     color: black;
     margin: 0;
   }
   h3 {
-    font-family: "NeueWorld-CondensedRegular";
+    font-family: "Gatwick-Regular";
     font-weight: normal;
-    letter-spacing: 0.05vw;
-    line-height: 6vw;
-    font-size: 6vw;
-    color: #fcf8f5;
+    letter-spacing: 0.25vw;
+    line-height: 1vw;
+    font-size: 0.7vw;
+    color: #c48a3d;
     margin: 0;
   }
   h4 {
-    font-family: "MonumentExtended-bold";
+    font-family: "Gatwick-Regular";
     font-weight: normal;
-    letter-spacing: 0.05vw;
+    letter-spacing: 0.25vw;
     line-height: 2.4vw;
-    font-size: 1.6vw;
-    color: #fcf8f5;
+    font-size: 0.98vw;
+    color: #72819b;
     margin: 0;
   }
-  h5 {
-    font-family: "MonumentExtended-light";
-    font-weight: normal;
-    letter-spacing: 0.1vw;
-    line-height: 3.3vw;
-    font-size: 0.9vw;
-    color: #fcf8f5;
-    margin: 0;
-  }
-  .gold {
-    color: #b77030;
-  }
-  #quote {
-    font-family: "NeueWorld-CondensedRegular";
-    font-weight: normal;
-    letter-spacing: 0.05vw;
-    font-size: 3.1vw;
-    color: #fcf8f5;
-    margin: 0;
-  }
-}
+
